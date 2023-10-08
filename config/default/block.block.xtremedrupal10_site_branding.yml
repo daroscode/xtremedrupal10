@@ -1,0 +1,25 @@
+uuid: f79456ca-d218-4c90-995f-0473c26e3612
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: 78resJic2B4PQOrlgtNddqxqe6q5HIYEn-Z8ZsINpws
+id: xtremedrupal10_site_branding
+theme: xtremedrupal10
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

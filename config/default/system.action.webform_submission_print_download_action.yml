@@ -1,0 +1,14 @@
+uuid: 91901df3-5e26-45e5-a0bb-221fbdbb401e
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_print
+_core:
+  default_config_hash: 6NB9jXZ4gususWz-ipY5EZ46XPzh04FnTKeMR1k9SgY
+id: webform_submission_print_download_action
+label: 'Download PDF'
+type: webform_submission
+plugin: entity_print_download_action
+configuration:
+  export_type: pdf

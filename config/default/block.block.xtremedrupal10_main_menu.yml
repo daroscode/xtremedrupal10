@@ -1,0 +1,27 @@
+uuid: 16bed401-6749-4271-95a0-39c3f7f51012
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: qn8Gkq2eDrd0iyDokLVOdXVewCk84c99HpJt4awU62Q
+id: xtremedrupal10_main_menu
+theme: xtremedrupal10
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

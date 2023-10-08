@@ -1,0 +1,22 @@
+uuid: 0d4a753f-b39a-4ce7-b1e1-4b6e84c8bb2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: OZUbY9x_3PZn74zAV_-mOOpGeixUwX7di_NDlNdhFlM
+id: xtremedrupal10_breadcrumbs
+theme: xtremedrupal10
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

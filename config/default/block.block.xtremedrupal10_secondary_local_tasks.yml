@@ -1,0 +1,22 @@
+uuid: 32cf5c94-e14f-4250-a104-e2767ff01af3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: 6GnMn67EbYgMiYxo9wL_5dro9TFv8uh6qvBkDWTxuzI
+id: xtremedrupal10_secondary_local_tasks
+theme: xtremedrupal10
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

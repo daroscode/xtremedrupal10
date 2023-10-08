@@ -1,0 +1,22 @@
+uuid: fcb43ea4-231c-4df7-8c97-3d60d020cfb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: Cjv2trGd88G1n7bt4RZFu9kKYE_H3A07DtsyGxCL1f4
+id: xtremedrupal10_help
+theme: xtremedrupal10
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: cbb9913a-9ef0-4f05-b89f-0311385966bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: 96yrikaB9oqtm_BnmJCfWZWnD1Vcu8rO-PbjSc9AJek
+id: xtremedrupal10_search_form_wide
+theme: xtremedrupal10
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: e7462e81-e0ab-455e-8fa6-c7b193b3d041
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: KSlah1XK82wVviqRXwvm0_UcVhtSBiru2fWUa7k6Jeo
+id: xtremedrupal10_powered
+theme: xtremedrupal10
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

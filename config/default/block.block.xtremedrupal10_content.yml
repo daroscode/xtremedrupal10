@@ -1,0 +1,22 @@
+uuid: 21a51235-77f8-4420-8111-d6b243c636b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: nHHVj7thDaZApSC1GZmX2F-sD0C6hHW-PRdwHnB9_Uc
+id: xtremedrupal10_content
+theme: xtremedrupal10
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

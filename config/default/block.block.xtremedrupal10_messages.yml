@@ -1,0 +1,22 @@
+uuid: 1360de15-e25a-40c5-9341-59542839d5af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: 0Y7DDtJeja3n4Nwb7Rjgbd3mbB2gbKB1BZ0vWQQ-aPc
+id: xtremedrupal10_messages
+theme: xtremedrupal10
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

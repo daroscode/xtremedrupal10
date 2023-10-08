@@ -1,0 +1,25 @@
+uuid: 07f57922-0cf1-4cd2-a891-8f80ed3ed059
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_sass
+_core:
+  default_config_hash: J1Hfsrk87t9TrZowA5N6UJsdcvc4LNuwe8vwKm6vHSA
+id: bootstrap_sass_site_branding
+theme: bootstrap_sass
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

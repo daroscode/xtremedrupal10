@@ -31,6 +31,7 @@
 /web/sites/example.sites.php
 /web/sites/README.txt
 /web/themes/README.txt
+/web/themes/custom/*/node_modules
 /web/.csslintrc
 /web/.editorconfig
 /web/.eslintignore
@@ -60,3 +61,9 @@
 /drush
 /drupal.phar
 /drupal
+
+# Code editors
+vscode/
+vscode
+.history/
+.history

@@ -1,0 +1,20 @@
+uuid: 6446f750-643c-4433-a35e-3b2cd4af8b59
+langcode: en
+status: true
+dependencies:
+  theme:
+    - xtremedrupal10
+_core:
+  default_config_hash: TJYx57enJMW9GoDhCpOSksPVP2Ue1Qm1_8gerYR_wXQ
+id: xtremedrupal10_page_title
+theme: xtremedrupal10
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
