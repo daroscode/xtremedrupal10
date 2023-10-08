@@ -31,7 +31,7 @@ content:
     region: content
   comment:
     type: comment_default
-    label: above
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
@@ -51,7 +51,7 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -67,3 +67,4 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
+  search_api_excerpt: true

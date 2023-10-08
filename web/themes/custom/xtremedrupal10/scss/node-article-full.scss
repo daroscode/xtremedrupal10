@@ -1,0 +1,9 @@
+.node--type-article {
+	.article-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.article-img-header {}
+		.article-content-inner {}
+	}
+}
