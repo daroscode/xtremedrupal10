@@ -1,0 +1,36 @@
+#header {
+  border-bottom: 2px solid $accent-shade;
+  #navbar-main-sticky-wrapper {
+    margin-left: 4.375rem;
+    margin-right: 4.375rem;
+  }
+  #navbar-main {
+    background-color: $white !important;
+    .navbar-brand {
+      color: none !important;
+      .img-fluid {
+        max-width: 4.065rem;
+      }
+    }
+  }
+}
+
+#block-xtremedrupal10-main-menu {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        background-color: $white;
+        color: $accent-shade;
+      }
+    }
+    .active,
+    .is-active {
+      background-color: $accent-shade !important;
+      color: $white !important;
+    }
+  }
+}
+
+#block-xtremedrupal10-breadcrumbs {
+  margin-top: 30px;
+}

@@ -2,9 +2,9 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: ebd0d343-8de1-4877-a32c-4a3757049a48
-name: 'Xtreme Drupal 10'
+name: Xtreme!
 mail: xtremedrupal10@localhost.com
-slogan: ''
+slogan: 'Onde você drupaliza.'
 page:
   403: ''
   404: ''
