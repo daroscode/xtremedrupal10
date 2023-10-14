@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "853e76b7d1c708a6ab484222902747f7",
+    "content-hash": "275cf67c744cf47ce94d8af1b4cf90f7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3144,6 +3144,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/slick",
                 "issues": "https://drupal.org/project/issues/slick"
+            }
+        },
+        {
+            "name": "drupal/sticky",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sticky.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sticky-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "102f481e75304e7e00dd9abde97e3d28f7d7ed5e"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1675674944",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "f0ns",
+                    "homepage": "https://www.drupal.org/user/723426"
+                }
+            ],
+            "description": "Sticky is a module that gives you the ability to make any element on your website to always stay visible.",
+            "homepage": "https://www.drupal.org/project/sticky",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sticky"
             }
         },
         {

@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.article
+    - taxonomy.vocabulary.tags
   module:
+    - better_exposed_filters
     - node
+    - taxonomy
 id: articles
 label: Articles
 module: views
@@ -89,15 +92,37 @@ display:
             offset: false
             offset_label: Offset
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
+          reset_button: true
+          reset_button_label: Resetar
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: true
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+              reset_button_always_show: true
+            filter:
+              field_tags_target_id:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       access:
         type: none
         options: {  }
@@ -144,6 +169,54 @@ display:
           plugin_id: bundle
           value:
             article: article
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_tags_target_id_op
+            label: 'Busque por Tags:'
+            description: ''
+            use_operator: false
+            operator: field_tags_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_tags_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: grid_responsive
         options:
@@ -165,20 +238,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: "<span>Não encontrou o que procurava?</span>\r\n<div class=\"autocomplete\">\r\n        <input type=\"text\" id=\"autocomplete-input\" placeholder=\"Pesquise por tags\">\r\n        <ul id=\"autocomplete-list\"></ul>\r\n    </div>"
-            format: full_html
-          tokenize: false
+      use_ajax: true
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -186,7 +247,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
       tags: {  }
   page_1:
@@ -202,6 +265,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
       tags: {  }
