@@ -1,0 +1,21 @@
+uuid: 433ec2b5-fcf9-4248-9f14-9354a0066774
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - demo_rest_api
+    - serialization
+    - user
+id: demo_resource
+plugin_id: demo_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - cookie

@@ -1,0 +1,6 @@
+name: Demo REST API
+description: Define's a custom REST Resource
+package: Custom
+type: module
+core: 8.x
+core_version_requirement: ^10
