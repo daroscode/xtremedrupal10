@@ -1,0 +1,8 @@
+uuid: 75963ee3-0ad8-48d4-ae97-ed09aa82ae25
+langcode: en
+status: true
+dependencies: {  }
+id: block_text_image
+label: 'Bloco - Texto & Imagem'
+revision: 0
+description: 'Bloco para texto e imagem.'

@@ -1,0 +1,31 @@
+uuid: 28c0fee4-7062-404e-978c-8843206547fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.block_text_image
+    - field.storage.node.field_custom_blocks
+    - node.type.page
+id: node.page.field_custom_blocks
+field_name: field_custom_blocks
+entity_type: node
+bundle: page
+label: 'Blocos customizados'
+description: 'Insira blocos customizados se desejar.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+      block_text_image: block_text_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: basic
+field_type: entity_reference

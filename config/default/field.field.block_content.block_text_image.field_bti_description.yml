@@ -1,0 +1,24 @@
+uuid: 264641c3-09e3-4b7d-bdc6-acb07b2fe6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_text_image
+    - field.storage.block_content.field_bti_description
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.block_text_image.field_bti_description
+field_name: field_bti_description
+entity_type: block_content
+bundle: block_text_image
+label: 'Texto descritivo'
+description: 'Insira um breve texto descritivo para o bloco.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
